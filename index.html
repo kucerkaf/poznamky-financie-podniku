@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poznámky - Finančné riadenie podniku</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .math {
+            font-style: italic;
+            color: #2b6cb0;
+        }
+        .correct {
+            color: #16a34a;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: #dc2626;
+            text-decoration: line-through;
+        }
+        .answer {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-6 text-center">
+        <h1 class="text-4xl font-bold">POZNÁMKY</h1>
+        <h2 class="text-2xl mt-2">Finančné riadenie podniku</h2>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+        <!-- Sekcia Poznámky -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4">Financie</h3>
+            <p>Financie predstavujú sústavu peňažných vzťahov, prostredníctvom ktorých sa tvoria, rozdeľujú a používajú peňažné fondy v národnom hospodárstve. Majú 4 zložky:</p>
+            <ul class="list-disc pl-6">
+                <li><strong>Štátne financie</strong> - peňažné vzťahy, prostredníctvom ktorých sa tvoria, rozdeľujú a používajú centralizované peňažné fondy nenávratným spôsobom (napr. dotácie). Základom je štátny rozpočet.</li>
+                <li><strong>Úvery</strong> - peňažné vzťahy, prostredníctvom ktorých sa tvoria, rozdeľujú a používajú peňažné fondy návratným spôsobom.</li>
+                <li><strong>Poistenie</strong> - peňažné vzťahy, prostredníctvom ktorých sa tvoria, rozdeľujú a používajú peňažné fondy poistovacím spôsobom, ktorý spočíva v podmienenej návratnosti a neekvivalentnosti. <br>
+                    Návratnosť je podmienená vznikom poistnej udalosti, napr. nehoda, úraz, živelná pohroma,... <br>
+                    Neekvivalentnosť spočíva v tom, že výška vyplatenej sumy je odlišná od sumy, ktorú poistník platí vo forme poistného.</li>
+                <li><strong>Podnikové financie</strong> - peňažné vzťahy, prostredníctvom ktorých sa tvoria, rozdeľujú a používajú peňažné fondy kombinovaným spôsobom, t.j. kombinácia nenávratného, návratného, poistovacieho spôsobu spolu s realizačným spôsobom (vyjadruje tovarovo-peňažné vzťahy, t.j. výmena peňazí za tovar a naopak).</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">Podstata finančného hospodárenia podniku</h3>
+            <p>Činnosť podniku má vecnú a finančnú stránku.</p>
+            <ul class="list-disc pl-6">
+                <li><strong>Vecná stránka</strong> = transformačný proces (premena vstupov na výstupy).</li>
+                <li><strong>Finančná stránka</strong> je spojená s obehom peňazí, pri ktorom vznikajú medzi podnikom a inými subjektmi peňažné vzťahy. Peňažné vzťahy majú podobu peňažných príjmov a výdavkov.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">Finančné hospodárenie podniku</h3>
+            <p>Finančné hospodárenie podniku predstavuje pohyb peňazí, majetku a kapitálu podniku.</p>
+            <p><strong>Peniaze</strong> predstavujú časť majetku. Zahŕňajú:</p>
+            <ul class="list-disc pl-6">
+                <li>Peniaze v hotovosti</li>
+                <li>Krátkodobé a dlhodobé vklady v bankách</li>
+                <li>Krátkodobé a dlhodobé cenné papiere</li>
+                <li>Ceniny (kolky, známky)</li>
+            </ul>
+            <p><strong>Majetok</strong> - je všetko, čo podnik vlastní. Je súhrn majetkových hodnôt, ktoré patria podnikateľovi a slúžia na podnikanie. Celý majetok sa vyskytuje v peňažnej podobe len zriedkavo, napr. pri založení a vzniku podniku alebo pri likvidácii podniku.</p>
+            <p>Majetok podniku tvorí:</p>
+            <ul class="list-disc pl-6">
+                <li>Pohľadávka za upísané vlastné imanie</li>
+                <li><strong>Dlhodobý majetok</strong> - hmotný, nehmotný, finančný, dlhodobé pohľadávky</li>
+                <li><strong>Obežný (krátkodobý) majetok</strong> - zásoby, pohľad aspectoávky, krátkodobý finančný majetok</li>
+                <li>Časové rozlíšenie</li>
+            </ul>
+            <p><strong>Kapitál</strong> predstavuje finančné zdroje, z ktorých sa majetok podniku obstaral. Zložky kapitálu:</p>
+            <ul class="list-disc pl-6">
+                <li><strong>Vlastný kapitál</strong></li>
+                <li><strong>Cudzí kapitál</strong> - krátkodobý, dlhodobý</li>
+            </ul>
+            <p><strong>Vlastný kapitál (imanie)</strong> tvorí:</p>
+            <ol class="list-decimal pl-6">
+                <li><strong>Základné imanie</strong> - peňažné vyjadrenie súhrnu vkladov všetkých spoločníkov do spoločnosti, ktoré sa zapisuje do Obchodného registra. Povinne sa vytvára v kapitálových obchodných spoločnostiach.</li>
+                <li><strong>Fondy</strong>
+                    <ul class="list-disc pl-6">
+                        <li><strong>Kapitálové fondy</strong> - obvykle sa tvoria z externých zdrojov, napr. prijaté dary.</li>
+                        <li><strong>Fondy tvorené zo zisku</strong> - vytvárajú sa z dosiahnutého zisku podniku, napr. zákonný rezervný fond v a.s. a s.r.o., nedeliteľný fond v družstvách.</li>
+                    </ul>
+                </li>
+                <li><strong>Výsledok hospodárenia minulých rokov</strong> - môže byť vo forme buď nerozdeleného zisku minulých rokov alebo neuhradenej straty minulých rokov.</li>
+                <li><strong>Výsledok hospodárenia účtovného obdobia</strong></li>
+            </ol>
+            <p><strong>Cudzí kapitál</strong> je zdrojom krytia majetku cudzími peňažnými prostriedkami. Patria sem:</p>
+            <ol class="list-decimal pl-6">
+                <li>Úvery</li>
+                <li>Záväzky - môžu byť dlhodobé a krátkodobé (voči dodávateľom, zamestnancom, štátu)</li>
+                <li>Rezervy</li>
+            </ol>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">Vzťah medzi majetkom a kapitálom</h3>
+            <p class="math">MAJETOK = KAPITÁL</p>
+            <p>aktíva spolu = pasíva spolu</p>
+            <p>Finančné hospodárenie podniku a dosiahnutý výsledok závisia od jeho riadenia. Finanční manažéri sa zaoberajú riadením finančných procesov, pričom sa zameriavajú na:</p>
+            <ol class="list-roman pl-6">
+                <li>Financovanie (obstarávanie kapitálu)</li>
+                <li>Investovanie (umiestnenie a využívanie kapitálu) = ALOKÁCIA</li>
+                <li>Finančné plánovanie</li>
+                <li>Finančná analýza</li>
+            </ol>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">Financovanie podniku</h3>
+            <p>Financovanie podniku znamená obstarávanie kapitálu z rôznych zdrojov. Druhy financovania:</p>
+            <ul class="list-disc pl-6">
+                <li><strong>Podľa pravidelnosti</strong>
+                    <ul class="list-circle pl-6">
+                        <li><strong>Bežné financovanie</strong> - podnik získava peniaze na bežnú prevádzku (nákup materiálu, vyplatenie miezd, platenie daní).</li>
+                        <li><strong>Mimoriadne financovanie</strong> - uskutočňuje sa pri zakladaní, rozširovaní, likvidácii podniku.</li>
+                    </ul>
+                </li>
+                <li><strong>Podľa viazanosti peňažných prostriedkov</strong>
+                    <ul class="list-circle pl-6">
+                        <li><strong>Dlhodobé financovanie</strong> - zdrojom je napr. dlhodobý úver.</li>
+                        <li><strong>Krátkodobé financovanie</strong> - zdrojom je napr. krátkodobý úver.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Pri financovaní podnik rieši dve základné otázky:</p>
+            <ol class="list-decimal pl-6">
+                <li>Koľko kapitálu bude potrebovať?</li>
+                <li>Odkiaľ zabezpečí finančné zdroje?</li>
+            </ol>
+            <p><strong>Členenie finančných zdrojov</strong></p>
+            <ul class="list-disc pl-6">
+                <li><strong>Podľa vlastníctva</strong>
+                    <ul class="list-circle pl-6">
+                        <li><strong>Vlastné zdroje</strong>
+                            <ul class="list-square pl-6">
+                                <li>Vklady vlastníkov</li>
+                                <li>Zdroje z podnikateľskej činnosti (zisk, odpisy, fondy tvorené zo zisku)</li>
+                                <li>Zdroje získané z nepeňažných zložiek majetku, napr. predaj nepotrebného majetku a iné</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cudzie zdroje</strong>
+                            <ul class="list-square pl-6">
+                                <li>Úvery</li>
+                                <li>Pôžičky</li>
+                                <li>Záväzky</li>
+                                <li>Rezervy</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Vlastný kapitál</strong> - buď ho do podniku vložili vlastníci, alebo vznikol jeho činnosťou. Podnik ho má k dispozícii trvale, je ukazovateľom jeho finančnej stability.</p>
+            <p><strong>Cudzí kapitál</strong> - je to dlh, záväzok podniku, ktorý musí v určenej dobe splatiť veriteľom. Podľa doby splatnosti rozlišujeme:</p>
+            <ul class="list-disc pl-6">
+                <li>Krátkodobý cudzí kapitál (do 1 roka)</li>
+                <li>Strednodobý a dlhodobý cudzí kapitál (nad 1 rok)</li>
+            </ul>
+            <p>Jednotlivé zložky kapitálu tvoria jeho <strong>kapitálovú štruktúru</strong>.</p>
+            <p>Jednotlivé zložky majetku tvoria jeho <strong>majetkovú štruktúru</strong>.</p>
+            <p><strong>Zlaté bilančné pravidlo</strong> hovorí o tom, z akých zdrojov sa má majetok financovať:</p>
+            <ul class="list-disc pl-6">
+                <li>Trvale alebo dlhodobo viazaný majetok (neobežný) sa má financovať kapitálom, ktorý má podnik trvale alebo dlhodobo k dispozícii.</li>
+                <li class="math">Neobežný majetok (DHM, DNM, DFM, DPo) financovaný dlhodobými finančnými zdrojmi (dlhodobý úver, zisk, ZI).</li>
+                <li>Krátkodobo viazaný majetok (obežný) možno financovať krátkodobými finančnými zdrojmi.</li>
+                <li class="math">Obežný majetok (zásoby, KFM, KPo) financovaný krátkodobými finančnými zdrojmi (krátkodobý úver, záväzky).</li>
+            </ul>
+            <p><strong>Podľa spôsobu získavania</strong> (odkiaľ zdroje plynú):</p>
+            <ul class="list-disc pl-6">
+                <li><strong>Interné zdroje</strong>
+                    <ul class="list-circle pl-6">
+                        <li>Zisk</li>
+                        <li>Odpisy</li>
+                        <li>Ostatné zdroje</li>
+                    </ul>
+                </li>
+                <li><strong>Externé zdroje</strong>
+                    <ul class="list-circle pl-6">
+                        <li>Vklady vlastníkov</li>
+                        <li>Úvery</li>
+                        <li>Dotácie</li>
+                        <li>Rezervy</li>
+                        <li>Osobitné formy financovania (lízing, faktoring, forfaiting)</li>
+                        <li>Ďalšie zdroje</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Interné finančné zdroje</strong></p>
+            <ul class="list-disc pl-6">
+                <li>Získava podnik vlastnou podnikateľskou činnosťou.</li>
+                <
+
+li>Tvoria ich najmä zisk a odpisy – ak ich podnik používa na financovanie svojej činnosti, hovoríme o <strong>samofinancovaní</strong>.</li>
+            </ul>
+            <p><strong>Samofinancovanie</strong></p>
+            <ul class="list-disc pl-6">
+                <li>V užšom zmysle: financovanie zo zisku.</li>
+                <li>V širšom zmysle: financovanie zo zisku a odpisov.</li>
+                <li>Ostatné interné zdroje, napr. predaj nepotrebného dlhodobého majetku alebo nadbytočných zásob.</li>
+            </ul>
+            <p><strong>Externé finančné zdroje</strong></p>
+            <ul class="list-disc pl-6">
+                <li>Podnik ich získava z vonkajšieho prostredia, nie z vlastnej podnikateľskej činnosti. Patria sem:</li>
+                <li><strong>Vklady vlastníkov</strong> - ich forma a výška závisí od právnej formy podnikania. Môžu byť vložené do podnikania na začiatku, ale aj v priebehu podnikateľskej činnosti (tzv. ďalšie vklady).</li>
+                <li><strong>Úvery</strong> sú návratným zdrojom financovania. Rozlišujeme:</li>
+                <ul class="list-circle pl-6">
+                    <li><strong>Krátkodobé úvery</strong> - doba splatnosti do 1 roka, napr.:
+                        <ul class="list-square pl-6">
+                            <li>Bankové úvery - napr. kontokorentný úver.</li>
+                            <li>Obchodný úver - poskytuje dodávateľ odberateľovi tak, že mu dodá tovar a platbu odloží na neskôr.</li>
+                            <li>Preddavky od odberateľov - odberateľ poskytuje dodávateľovi peňažné prostriedky pred uskutočnením dodávky.</li>
+                            <li>Záväzky podniku - napr. voči zamestnancom, dodávateľom, štátu.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Strednodobé a dlhodobé úvery</strong> - splatnosť viac ako 1 rok, napr.:
+                        <ul class="list-square pl-6">
+                            <li>Bankové úvery - napr. hypotekárny úver.</li>
+                            <li>Dodávateľský úver - poskytuje dodávateľ odberateľovi tak, že mu dodá tovar a platbu odloží na dobu dlhšiu ako 1 rok.</li>
+                            <li>Obligácie sú cenné papiere, predajom ktorých emitent (dlžník) získava od veriteľov kapitál.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <li><strong>Dotácie</strong> - nenávratný zdroj financovania. Môžu byť poskytované napr. zo štátneho rozpočtu, z miestnych rozpočtov, z fondov EÚ a i. Môžu byť:
+                    <ul class="list-circle pl-6">
+                        <li>Účelové - na presne určený účel.</li>
+                        <li>Neúčelové - nie je určený účel použitia.</li>
+                    </ul>
+                </li>
+                <li><strong>Rezervy</strong> sú zdroje, ktoré podnik vytvára na krytie existujúcich rizík súvisiacich s činnosťou podniku. Delia sa na:
+                    <ul class="list-circle pl-6">
+                        <li>Zákonné</li>
+                        <li>Ostatné</li>
+                    </ul>
+                </li>
+                <li><strong>Osobitné formy financovania</strong>
+                    <ul class="list-circle pl-6">
+                        <li><strong>Lízing</strong> je prenájom predmetov dlhodobej spotreby na základe zmluvy na určenú dobu a za dohodnutý poplatok.</li>
+                        <li><strong>Účastníci lízingu</strong>:
+                            <ul class="list-square pl-6">
+                                <li><strong>Prenajímateľ</strong> - je ním spoločnosť, napr. lízingová spoločnosť, ktorá prenajíma daný majetok. Je jeho vlastníkom a nájomca jej platí.</li>
+                                <li><strong>Nájomca</strong> je klient spoločnosti, ktorý používa daný predmet. Platí lízingovej spoločnosti lízingové splátky (nájomné).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Predmetom lízingu</strong> môžu byť napr. autá, stroje a zariadenia, softvér, technológie, lode, lietadlá, PC, nehnuteľnosti,...</li>
+                        <li><strong>Druhy lízingu</strong>:
+                            <ul class="list-square pl-6">
+                                <li><strong>Finančný (dlhodobý)</strong> - je založený na účasti 3 strán - predajcu, prenajímateľa a nájomcu (nepriamy).</li>
+                                <li><strong>Operatívny (krátkodobý)</strong> - priamy vzťah medzi prenajímateľom a nájomcom.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Charakteristické črty finančného lízingu</strong>:
+                    <ul class="list-disc pl-6">
+                        <li>Dlhodobý prenájom (doba prenájmu je počas celej životnosti predmetu).</li>
+                        <li>Súčasťou zmluvy je aj dohodnutá akontácia = je to suma, ktorú zaplatí nájomca pri podpise lízingovej zmluvy (10-70% z obstarávacej ceny).</li>
+                        <li>Po skončení prenájmu prechádzajú vlastnícke práva na nájomcu.</li>
+                        <li>Doba prenájmu závisí od toho, ako dlho sa predmet odpisuje v účtovníctve (min. 3 roky).</li>
+                        <li>Nájomca nemôže počas doby prenájmu zrušiť zmluvu, ale prenajímateľ môže (napr. pri neplatení splátok).</li>
+                    </ul>
+                </li>
+                <li><strong>Charakteristické črty operatívneho lízingu</strong>:
+                    <ul class="list-disc pl-6">
+                        <li>Krátkodobý prenájom (doba prenájmu je kratšia ako životnosť predmetu).</li>
+                        <li>Prenájom sa obmedzuje len na niektoré predmety (PC, stavebné stroje, lešenie).</li>
+                        <li>Zmluva sa môže kedykoľvek zrušiť.</li>
+                        <li>Nájomca neplatí akontáciu.</li>
+                        <li>Nemenia sa vlastnícke vzťahy - predmet prenájmu je stále vo vlastníctve prenajímateľa, on zabezpečuje servis, poistenie, bežné opravy.</li>
+                    </ul>
+                </li>
+                <li><strong>Výhody lízingu</strong>:
+                    <ul class="list-disc pl-6">
+                        <li>Nemusí žiadať banku o úver.</li>
+                        <li>Použitie lízingu neovplyvňuje likviditu podniku.</li>
+                        <li>Je bariérou proti inflácii.</li>
+                        <li>Napomáha technickému pokroku.</li>
+                        <li>Lízingové splátky sú nákladom, ktorý je daňovo uznaný.</li>
+                    </ul>
+                </li>
+                <li><strong>Nevýhody lízingu</strong>:
+                    <ul class="list-disc pl-6">
+                        <li>Súčet splátok je vyšší ako obstarávacia cena predmetu.</li>
+                        <li>Majetok je počas lízingu vo vlastníctve prenajímateľa.</li>
+                    </ul>
+                </li>
+                <li><strong>Faktoring</strong> - patrí ku krátkodobým formám financovania v tuzemsku i v medzinárodnom obchode. Faktoring znamená odkúpenie krátkodobých pohľadávok od dodávateľa pred lehotou splatnosti faktoringovou spoločnosťou (faktorom). Faktorom býva často dcérska spoločnosť banky, ktorá kúpi odberateľské faktúry od dodávateľa, pričom mu poskytne 60-90% menovitej hodnoty faktúry.</li>
+                <li><strong>Forfaiting</strong> - je dlhodobá forma financovania. Forfaiting znamená odkúpenie strednodobých a dlhodobých pohľadávok od dodávateľa pred lehotou ich splatnosti forfaitingovou spoločnosťou (forfaitérom).
+                    <ul class="list-disc pl-6">
+                        <li>Splatnosť pohľadávok je viac ako 90 dní.</li>
+                        <li>Sú spojené s predajom strojov, zariadení a investičných celkov.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sekcia Test -->
+        <section class="mt-12">
+            <h3 class="text-2xl font-semibold mb-4">Test</h3>
+            <form id="quizForm" class="space-y-6">
+                <!-- Otázka 1 (ABCD) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">1. Ktorá z nasledujúcich zložiek nie je súčasťou financií?</p>
+                    <label class="block"><input type="radio" name="q1" value="a" class="mr-2"> a) Štátne financie</label>
+                    <label class="block"><input type="radio" name="q1" value="b" class="mr-2"> b) Úvery</label>
+                    <label class="block"><input type="radio" name="q1" value="c" class="mr-2"> c) Poistenie</label>
+                    <label class="block"><input type="radio" name="q1" value="d" class="mr-2"> d) Výroba</label>
+                    <p class="answer text-sm text-gray-600 mt-2" data-correct="d">Správna odpoveď: d) Výroba</p>
+                    <p class="feedback text-sm mt-2 hidden"></p>
+                </div>
+
+                <!-- Otázka 2 (ABCD) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">2. Čo je charakteristické pre finančný lízing?</p>
+                    <label class="block"><input type="radio" name="q2" value="a" class="mr-2"> a) Krátkodobý prenájom</label>
+                    <label class="block"><input type="radio" name="q2" value="b" class="mr-2"> b) Po skončení prenájmu prechádzajú vlastnícke práva na nájomcu</label>
+                    <label class="block"><input type="radio" name="q2" value="c" class="mr-2"> c) Nájomca môže zmluvu kedykoľvek zrušiť</label>
+                    <label class="block"><input type="radio" name="q2" value="d" class="mr-2"> d) Predmet lízingu zostáva vo vlastníctve prenajímateľa bez zmien</label>
+                    <p class="answer text-sm text-gray-600 mt-2" data-correct="b">Správna odpoveď: b) Po skončení prenájmu prechádzajú vlastnícke práva na nájomcu</p>
+                    <p class="feedback text-sm mt-2 hidden"></p>
+                </div>
+
+                <!-- Otázka 3 (ABCD) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">3. Ktorý z nasledujúcich prvkov patrí do vlastného kapitálu?</p>
+                    <label class="block"><input type="radio" name="q3" value="a" class="mr-2"> a) Krátkodobý úver</label>
+                    <label class="block"><input type="radio" name="q3" value="b" class="mr-2"> b) Základné imanie</label>
+                    <label class="block"><input type="radio" name="q3" value="c" class="mr-2"> c) Záväzky voči dodávateľom</label>
+                    <label class="block"><input type="radio" name="q3" value="d" class="mr-2"> d) Rezervy</label>
+                    <p class="answer text-sm text-gray-600 mt-2" data-correct="b">Správna odpoveď: b) Základné imanie</p>
+                    <p class="feedback text-sm mt-2 hidden"></p>
+                </div>
+
+                <!-- Otázka 4 (ABCD) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">4. Čo je typické pre cudzie zdroje financovania?</p>
+                    <label class="block"><input type="radio" name="q4" value="a" class="mr-2"> a) Vznikajú činnosťou podniku</label>
+                    <label class="block"><input type="radio" name="q4" value="b" class="mr-2"> b) Sú trvalo k dispozícii</label>
+                    <label class="block"><input type="radio" name="q4" value="c" class="mr-2"> c) Musia byť splatené veriteľom</label>
+                    <label class="block"><input type="radio" name="q4" value="d" class="mr-2"> d) Zahŕňajú vklady vlastníkov</label>
+                    <p class="answer text-sm text-gray-600 mt-2" data-correct="c">Správna odpoveď: c) Musia byť splatené veriteľom</p>
+                    <p class="feedback text-sm mt-2 hidden"></p>
+                </div>
+
+                <!-- Otázka 5 (Vysvetlenie) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">5. Vysvetlite, čo je to zlaté bilančné pravidlo.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Zlaté bilančné pravidlo hovorí, že trvale alebo dlhodobo viazaný majetok (neobežný) sa má financovať kapitálom, ktorý má podnik trvale alebo dlhodobo k dispozícii (napr. dlhodobý úver, zisk, základné imanie). Krátkodobo viazaný majetok (obežný) možno financovať krátkodobými finančnými zdrojmi (napr. krátkodobý úver, záväzky).</p>
+                </div>
+
+                <!-- Otázka 6 (Definícia) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">6. Definujte, čo je to vlastný kapitál.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Vlastný kapitál je buď vložený do podniku vlastníkmi, alebo vznikol jeho činnosťou. Podnik ho má k dispozícii trvale a je ukazovateľom jeho finančnej stability. Tvoria ho základné imanie, fondy, výsledok hospodárenia minulých rokov a výsledok hospodárenia účtovného obdobia.</p>
+                </div>
+
+                <!-- Otázka 7 (Vysvetlenie) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">7. Vysvetlite rozdiel medzi finančným a operatívnym lízingom.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Finančný lízing je dlhodobý, trvá počas celej životnosti predmetu, zahŕňa akontáciu (10-70% obstarávacej ceny) a po skončení prenájmu prechádzajú vlastnícke práva na nájomcu. Operatívny lízing je krátkodobý, trvá kratšie ako životnosť predmetu, nezahŕňa akontáciu, zmluva sa dá kedykoľvek zrušiť a vlastnícke práva zostávajú u prenajímateľa, ktorý zabezpečuje servis a opravy.</p>
+                </div>
+
+                <!-- Otázka 8 (Definícia) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">8. Definujte, čo je to faktoring.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Faktoring je krátkodobá forma financovania, pri ktorej faktoringová spoločnosť (faktor) odkupuje krátkodobé pohľadávky od dodávateľa pred lehotou ich splatnosti, pričom mu poskytne 60-90% menovitej hodnoty faktúry.</p>
+                </div>
+
+                <!-- Otázka 9 (Vysvetlenie) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">9. Vysvetlite, čo znamená neekvivalentnosť v poistení.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Neekvivalentnosť v poistení znamená, že výška vyplatenej sumy od poisťovne (pri vzniku poistnej udalosti) je odlišná od sumy, ktorú poistník platí vo forme poistného. Napríklad poistník platí nízke poistné, ale pri nehode môže dostať vysokú náhradu.</p>
+                </div>
+
+                <!-- Otázka 10 (Definícia) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">10. Definujte, čo je to cudzí kapitál.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Cudzí kapitál je zdroj krytia majetku podniku cudzími peňažnými prostriedkami, ktoré predstavujú dlh alebo záväzok podniku, ktorý musí v určenej dobe splatiť veriteľom. Patria sem úvery, záväzky (dlhodobé a krátkodobé) a rezervy.</p>
+                </div>
+
+                <!-- Otázka 11 (Vysvetlenie) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">11. Vysvetlite, aký je rozdiel medzi internými a externými finančnými zdrojmi.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Interné finančné zdroje podnik získava vlastnou podnikateľskou činnosťou, napr. zisk a odpisy, a používa ich na samofinancovanie. Externé zdroje pochádzajú z vonkajšieho prostredia, napr. vklady vlastníkov, úvery, dotácie, rezervy alebo osobitné formy financovania (lízing, faktoring, forfaiting).</p>
+                </div>
+
+                <!-- Otázka 12 (Definícia) -->
+                <div class="border p-4 rounded-lg">
+                    <p class="font-semibold">12. Definujte, čo je to samofinancovanie.</p>
+                    <textarea class="w-full p-2 border rounded-lg" rows="4" placeholder="Vaša odpoveď..."></textarea>
+                    <p class="answer text-sm text-gray-600 mt-2">Správna odpoveď: Samofinancovanie je financovanie podniku z interných zdrojov získaných vlastnou podnikateľskou činnosťou, najmä zo zisku a odpisov. V užšom zmysle ide len o financovanie zo zisku, v širšom zmysle zahŕňa zisk aj odpisy.</p>
+                </div>
+
+                <!-- Tlačidlo Vyhodnotiť -->
+                <button type="button" id="evaluateBtn" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Vyhodnotiť</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center mt-6">
+        <p>© 2025 Poznámky a test - Finančné riadenie podniku</p>
+    </footer>
+
+    <script>
+        document.getElementById('evaluateBtn').addEventListener('click', function() {
+            // Zobraz odpovede pre všetky otázky
+            document.querySelectorAll('.answer').forEach(answer => {
+                answer.style.display = 'block';
+            });
+
+            // Vyhodnotenie ABCD otázok
+            const questions = [
+                { name: 'q1', correct: 'd', options: ['a', 'b', 'c', 'd'] },
+                { name: 'q2', correct: 'b', options: ['a', 'b', 'c', 'd'] },
+                { name: 'q3', correct: 'b', options: ['a', 'b', 'c', 'd'] },
+                { name: 'q4', correct: 'c', options: ['a', 'b', 'c', 'd'] }
+            ];
+
+            questions.forEach(question => {
+                const selected = document.querySelector(`input[name="${question.name}"]:checked`);
+                const feedback = document.querySelector(`input[name="${question.name}"]`).closest('div').querySelector('.feedback');
+                
+                if (selected) {
+                    const selectedValue = selected.value;
+                    question.options.forEach(option => {
+                        const label = document.querySelector(`input[name="${question.name}"][value="${option}"]`).parentElement;
+                        if (option === question.correct) {
+                            label.classList.add('correct');
+                        } else if (option === selectedValue && selectedValue !== question.correct) {
+                            label.classList.add('incorrect');
+                            feedback.classList.remove('hidden');
+                            feedback.textContent = `Nesprávna odpoveď. Správna je: ${question.correct.toUpperCase()})`;
+                            feedback.classList.add('text-red-600');
+                        }
+                    });
+                } else {
+                    feedback.classList.remove('hidden');
+                    feedback.textContent = `Nevybrali ste žiadnu odpoveď. Správna je: ${question.correct.toUpperCase()})`;
+                    feedback.classList.add('text-red-600');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
